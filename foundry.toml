@@ -13,6 +13,13 @@ out = "out"
 solc = "0.8.17"
 src = "src"
 test = "test"
+remappings = [
+    "@prb/test/=lib/prb-test/src/",
+    "forge-std/=lib/forge-std/src/",
+    "src/=src/",
+    "crambit/=lib/CramBit/src/",
+    "solidity-bytes-utils=lib/solidity-bytes-utils/contracts"
+]
 
 [profile.ci]
 fuzz = { runs = 1_000 }
